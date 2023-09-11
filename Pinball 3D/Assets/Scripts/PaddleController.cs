@@ -5,12 +5,16 @@ using UnityEngine;
 public class PaddleController : MonoBehaviour
 {
     public KeyCode input;
+    private float targetPressed;
+    private float targetRelease;
     private HingeJoint hinge;
-    public float springPower;
+
     // Start is called before the first frame update
     private void Start()
     {
         hinge = GetComponent<HingeJoint>();
+        targetPressed = hinge.limits.max;
+        targetRelease = hinge.limits.min;
     }
 
     // Update is called once per frame
@@ -27,9 +31,9 @@ public class PaddleController : MonoBehaviour
         // Mengubah value spring saat input ditekan dan dilepas
         if(Input.GetKey(input))
         {
-            joinSpring.spring = springPower;
+            joinSpring.targetPosition = targetPressed;
         } else {
-            joinSpring.spring = 0;
+            joinSpring.targetPosition = targetRelease;
         }
 
         hinge.spring = joinSpring;

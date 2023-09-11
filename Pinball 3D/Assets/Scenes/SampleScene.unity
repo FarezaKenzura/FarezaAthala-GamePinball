@@ -149,7 +149,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101125392}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1653bcbce76ef854ba1ddbc951d37203, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -254,7 +254,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278430458}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1653bcbce76ef854ba1ddbc951d37203, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -359,7 +359,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388062276}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1653bcbce76ef854ba1ddbc951d37203, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -653,13 +653,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107709256}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 301d966d09da1e84a9c381e73a04854d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   input: 276
-  springPower: 1000
 --- !u!59 &1107709258
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -676,8 +675,8 @@ HingeJoint:
   serializedVersion: 2
   m_UseSpring: 1
   m_Spring:
-    spring: 0
-    damper: 0
+    spring: 1000
+    damper: 50
     targetPosition: 30
   m_UseMotor: 0
   m_Motor:
@@ -733,7 +732,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107709256}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1653bcbce76ef854ba1ddbc951d37203, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -974,7 +973,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579513323}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1653bcbce76ef854ba1ddbc951d37203, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1069,8 +1068,8 @@ HingeJoint:
   serializedVersion: 2
   m_UseSpring: 1
   m_Spring:
-    spring: 0
-    damper: 0
+    spring: 1000
+    damper: 50
     targetPosition: 30
   m_UseMotor: 0
   m_Motor:
@@ -1132,7 +1131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: 275
-  springPower: 1000
 --- !u!1 &1626643304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,7 +1157,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626643304}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1653bcbce76ef854ba1ddbc951d37203, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1264,7 +1262,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796178437}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1653bcbce76ef854ba1ddbc951d37203, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
