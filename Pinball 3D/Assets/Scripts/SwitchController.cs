@@ -18,6 +18,9 @@ public class SwitchController : MonoBehaviour
 
     private Renderer render;
 
+    public AudioManager audioManager;
+    public VFXManager VFXManager;
+
     private void Start()
     {
         render = GetComponent<Renderer>();
@@ -80,6 +83,9 @@ public class SwitchController : MonoBehaviour
         if(other.gameObject.tag == "Ball")
         {
             Toggle();
+
+            audioManager.PlaySFX(other.transform.position, 1);
+            VFXManager.PlayVFX(other.transform.position, 1);
         }
     }
 }

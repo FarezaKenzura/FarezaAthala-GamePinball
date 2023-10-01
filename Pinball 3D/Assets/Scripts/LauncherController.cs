@@ -18,7 +18,7 @@ public class LauncherController : MonoBehaviour
     }
     public void OnCollisionStay(Collision col)
     {
-        if(col.collider == bola)
+        if(col.gameObject.tag == "Ball")
         {
             ReadInput(bola);
         }

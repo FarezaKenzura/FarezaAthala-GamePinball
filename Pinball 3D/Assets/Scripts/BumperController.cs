@@ -6,6 +6,8 @@ public class BumperController : MonoBehaviour
 {
     public float multiplier;
     private Animator anim;
+    public AudioManager audioManager;
+    public VFXManager VFXManager;
 
     private void Start()
     {
@@ -21,6 +23,9 @@ public class BumperController : MonoBehaviour
             Renderer render = gameObject.GetComponent<Renderer>();
             Color randomColor = new Color(Random.value, Random.value, Random.value);
             render.material.color = randomColor;
+
+            audioManager.PlaySFX(col.transform.position, 0);
+            VFXManager.PlayVFX(col.transform.position, 0);
 
             anim.SetTrigger("hit");
         }

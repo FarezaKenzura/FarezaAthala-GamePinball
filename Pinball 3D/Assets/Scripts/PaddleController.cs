@@ -20,7 +20,6 @@ public class PaddleController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        // Read Input
         ReadInput();
     }
 
@@ -28,7 +27,6 @@ public class PaddleController : MonoBehaviour
     {
         JointSpring joinSpring = hinge.spring;
 
-        // Mengubah value spring saat input ditekan dan dilepas
         if(Input.GetKey(input))
         {
             joinSpring.targetPosition = targetPressed;
