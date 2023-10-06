@@ -362,7 +362,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89bd2812dfdbf9a47afe72a6d4a04790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vfxSource: {fileID: 3411425401622777140, guid: b47b4acff5a04bc429e7c297f839a957, type: 3}
+  vfxSource:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &567886365
 Transform:
   m_ObjectHideFlags: 0
@@ -1071,7 +1074,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioBGM: {fileID: 2054951386}
-  audioSFX: {fileID: 5983247338769658067, guid: 7f39d388129fc9c4baa81b9e89bf3607, type: 3}
+  audioSFX:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &2054951388
 Transform:
   m_ObjectHideFlags: 0
